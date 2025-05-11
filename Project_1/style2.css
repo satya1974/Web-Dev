@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Light ocean blue fallback */
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-image: url('pexels-pixabay-147411.jpg'); /* Local background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-bottom: 5px solid #4CAF50;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Bucket List Section */
+.bucket-list {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    z-index: 2;
+}
+
+.bucket-list h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+    font-weight: 700;
+}
+
+/* List Styling */
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+ol li {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 1.4rem;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.3s ease;
+}
+
+ol li:hover {
+    transform: scale(1.05);
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+ol li p {
+    margin: 8px 0 0 0;
+    font-size: 1rem;
+    color: #222;
+    opacity: 0.9;
+}
+
+ol li.completed {
+    background-color: #c8e6c9;
+    color: #00796b;
+}
+
+ol li.completed p {
+    color: #2e7d32;
+    font-style: italic;
+}
+
+.icon {
+    font-size: 1.8rem;
+    margin-right: 10px;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+
+  header {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .bucket-list h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  ol li {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+
+  ol li p {
+    font-size: 0.95rem;
+  }
+}
