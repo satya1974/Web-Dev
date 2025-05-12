@@ -1,11 +1,11 @@
-/* General Styles */
+
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #e0f7fa; /* Light ocean blue fallback */
+    background-color: #e0f7fa;
     margin: 0;
     padding: 0;
     color: #fff;
-    background-image: url('pexels-pixabay-147411.jpg'); /* Local background image */
+    background-image: url('pexels-pixabay-147411.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -14,7 +14,6 @@ body {
     flex-direction: column;
 }
 
-/* Header */
 header {
     text-align: center;
     padding: 40px;
@@ -32,7 +31,6 @@ h1 {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
-/* Bucket List Section */
 .bucket-list {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -50,7 +48,6 @@ h1 {
     font-weight: 700;
 }
 
-/* List Styling */
 ol {
     list-style-type: none;
     padding: 0;
@@ -97,7 +94,6 @@ ol li.completed p {
     font-size: 1.8rem;
     margin-right: 10px;
 }
-/* Responsive Design */
 @media screen and (max-width: 768px) {
   body {
     background-attachment: scroll;
